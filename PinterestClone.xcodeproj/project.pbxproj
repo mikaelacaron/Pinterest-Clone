@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF579C33244A944000E32722 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF579C32244A944000E32722 /* APIClient.swift */; };
+		FF579C35244A987200E32722 /* UnsplashImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF579C34244A987200E32722 /* UnsplashImages.swift */; };
+		FF579C37244A9C0300E32722 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF579C36244A9C0300E32722 /* Endpoint.swift */; };
+		FF579C39244A9EE600E32722 /* UnsplashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF579C38244A9EE600E32722 /* UnsplashClient.swift */; };
+		FF579C3C244AA4F400E32722 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF579C3B244AA4F400E32722 /* ViewModel.swift */; };
+		FF579C44244BEDDE00E32722 /* TestingNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF579C43244BEDDE00E32722 /* TestingNetworking.swift */; };
+		FFB9F11D21FD5FE20089D79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9F11C21FD5FE20089D79B /* AppDelegate.swift */; };
+		FFB9F11F21FD5FE20089D79B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9F11E21FD5FE20089D79B /* ViewController.swift */; };
+		FFB9F12221FD5FE20089D79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB9F12021FD5FE20089D79B /* Main.storyboard */; };
+		FFB9F12421FD5FE30089D79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9F12321FD5FE30089D79B /* Assets.xcassets */; };
+		FFB9F12721FD5FE30089D79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB9F12521FD5FE30089D79B /* LaunchScreen.storyboard */; };
+		FFB9F13021FD6C4B0089D79B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9F12F21FD6C4B0089D79B /* PhotoCell.swift */; };
+		FFB9F13221FD7D7C0089D79B /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9F13121FD7D7C0089D79B /* PinterestLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF579C32244A944000E32722 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FF579C34244A987200E32722 /* UnsplashImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImages.swift; sourceTree = "<group>"; };
+		FF579C36244A9C0300E32722 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FF579C38244A9EE600E32722 /* UnsplashClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashClient.swift; sourceTree = "<group>"; };
+		FF579C3B244AA4F400E32722 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FF579C43244BEDDE00E32722 /* TestingNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingNetworking.swift; sourceTree = "<group>"; };
+		FFB9F11921FD5FE20089D79B /* PinterestClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinterestClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB9F11C21FD5FE20089D79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB9F11E21FD5FE20089D79B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFB9F12121FD5FE20089D79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB9F12321FD5FE30089D79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB9F12621FD5FE30089D79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB9F12821FD5FE30089D79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB9F12F21FD6C4B0089D79B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		FFB9F13121FD7D7C0089D79B /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB9F11621FD5FE20089D79B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF579C31244A942F00E32722 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FF579C32244A944000E32722 /* APIClient.swift */,
+				FF579C34244A987200E32722 /* UnsplashImages.swift */,
+				FF579C36244A9C0300E32722 /* Endpoint.swift */,
+				FF579C38244A9EE600E32722 /* UnsplashClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FF579C3A244AA4EA00E32722 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FF579C3B244AA4F400E32722 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FFB9F11021FD5FE10089D79B = {
+			isa = PBXGroup;
+			children = (
+				FFB9F11B21FD5FE20089D79B /* PinterestClone */,
+				FFB9F11A21FD5FE20089D79B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB9F11A21FD5FE20089D79B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9F11921FD5FE20089D79B /* PinterestClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB9F11B21FD5FE20089D79B /* PinterestClone */ = {
+			isa = PBXGroup;
+			children = (
+				FF579C3A244AA4EA00E32722 /* ViewModels */,
+				FF579C31244A942F00E32722 /* Networking */,
+				FFB9F12E21FD6C260089D79B /* Views */,
+				FFB9F11C21FD5FE20089D79B /* AppDelegate.swift */,
+				FFB9F11E21FD5FE20089D79B /* ViewController.swift */,
+				FF579C43244BEDDE00E32722 /* TestingNetworking.swift */,
+				FFB9F12021FD5FE20089D79B /* Main.storyboard */,
+				FFB9F12321FD5FE30089D79B /* Assets.xcassets */,
+				FFB9F12521FD5FE30089D79B /* LaunchScreen.storyboard */,
+				FFB9F12821FD5FE30089D79B /* Info.plist */,
+			);
+			path = PinterestClone;
+			sourceTree = "<group>";
+		};
+		FFB9F12E21FD6C260089D79B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9F12F21FD6C4B0089D79B /* PhotoCell.swift */,
+				FFB9F13121FD7D7C0089D79B /* PinterestLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB9F11821FD5FE20089D79B /* PinterestClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB9F12B21FD5FE30089D79B /* Build configuration list for PBXNativeTarget "PinterestClone" */;
+			buildPhases = (
+				FFB9F11521FD5FE20089D79B /* Sources */,
+				FFB9F11621FD5FE20089D79B /* Frameworks */,
+				FFB9F11721FD5FE20089D79B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinterestClone;
+			productName = PinterestClone;
+			productReference = FFB9F11921FD5FE20089D79B /* PinterestClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB9F11121FD5FE10089D79B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mikaela Caron";
+				TargetAttributes = {
+					FFB9F11821FD5FE20089D79B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FFB9F11421FD5FE10089D79B /* Build configuration list for PBXProject "PinterestClone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB9F11021FD5FE10089D79B;
+			productRefGroup = FFB9F11A21FD5FE20089D79B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB9F11821FD5FE20089D79B /* PinterestClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB9F11721FD5FE20089D79B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB9F12721FD5FE30089D79B /* LaunchScreen.storyboard in Resources */,
+				FFB9F12421FD5FE30089D79B /* Assets.xcassets in Resources */,
+				FFB9F12221FD5FE20089D79B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB9F11521FD5FE20089D79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF579C37244A9C0300E32722 /* Endpoint.swift in Sources */,
+				FF579C3C244AA4F400E32722 /* ViewModel.swift in Sources */,
+				FFB9F13221FD7D7C0089D79B /* PinterestLayout.swift in Sources */,
+				FFB9F11F21FD5FE20089D79B /* ViewController.swift in Sources */,
+				FF579C44244BEDDE00E32722 /* TestingNetworking.swift in Sources */,
+				FFB9F13021FD6C4B0089D79B /* PhotoCell.swift in Sources */,
+				FF579C39244A9EE600E32722 /* UnsplashClient.swift in Sources */,
+				FF579C35244A987200E32722 /* UnsplashImages.swift in Sources */,
+				FF579C33244A944000E32722 /* APIClient.swift in Sources */,
+				FFB9F11D21FD5FE20089D79B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFB9F12021FD5FE20089D79B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB9F12121FD5FE20089D79B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB9F12521FD5FE30089D79B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB9F12621FD5FE30089D79B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB9F12921FD5FE30089D79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFB9F12A21FD5FE30089D79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB9F12C21FD5FE30089D79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y535846H6P;
+				INFOPLIST_FILE = PinterestClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelacaron.PinterestClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB9F12D21FD5FE30089D79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y535846H6P;
+				INFOPLIST_FILE = PinterestClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikaelacaron.PinterestClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB9F11421FD5FE10089D79B /* Build configuration list for PBXProject "PinterestClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB9F12921FD5FE30089D79B /* Debug */,
+				FFB9F12A21FD5FE30089D79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB9F12B21FD5FE30089D79B /* Build configuration list for PBXNativeTarget "PinterestClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB9F12C21FD5FE30089D79B /* Debug */,
+				FFB9F12D21FD5FE30089D79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB9F11121FD5FE10089D79B /* Project object */;
+}
