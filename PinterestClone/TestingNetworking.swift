@@ -15,7 +15,17 @@ final class TestingNetworking {
     let baseUrl = "https://api.unsplash.com"
     let endpoint = "/photos"
     
-    func getImageUrl() {
+    func downloadImages(completion: @escaping (UIImage) -> ()) {
+        
+        getImageUrl { (imageUrl) in
+            self.getImageData(url: imageUrl) { (image) in
+                completion(image)
+            }
+        }
+        
+    }//end downloadImages()
+    
+    func getImageUrl(completion: @escaping (String) -> ()) {
         
         let imageEndpoint = baseUrl + endpoint
         guard let url = URL(string: imageEndpoint) else { return }
@@ -39,7 +49,7 @@ final class TestingNetworking {
                 guard let json = try JSONSerialization.jsonObject(with: data, options: [.allowFragments]) as? [String: Any] else { return }
                 
                 let imageUrl = json["url"] as? String ?? ""
-                self.getImageData(url: imageUrl)
+                completion(imageUrl)
                 
             } catch {
                 print("JSON error")
@@ -51,7 +61,7 @@ final class TestingNetworking {
         
     }//end getImageUrl()
     
-    func getImageData(url: String) {
+    func getImageData(url: String, completion: @escaping (UIImage) -> ()) {
         
         guard let url = URL(string: url) else { return }
         
@@ -71,6 +81,10 @@ final class TestingNetworking {
             
             guard let image = UIImage(data: data) else {
                 return
+            }
+            
+            DispatchQueue.main.async {
+                completion(image)
             }
             
         }//end let task
